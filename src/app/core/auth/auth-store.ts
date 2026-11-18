@@ -9,8 +9,12 @@ import { homeFor } from './roles';
 /** Claves que guardaba la versión 1 en localStorage (con el JWT); se borran al arrancar. */
 const LEGACY_STORAGE_KEYS = ['healthybites_auth', 'resetToken'];
 const CHANNEL = 'healthybites-session';
-/** Tope de espera al recuperar la sesión al arrancar: sin red, la app arranca igualmente (sin sesión). */
-const RESTORE_TIMEOUT_MS = 8000;
+/**
+ * Tope de espera al recuperar la sesión al arrancar: sin red, la app arranca igualmente (sin sesión). Cubre un
+ * arranque en frío de la API, que se apaga tras 5 minutos sin tráfico: 7-8 s, hasta 15 s si arrancan varias
+ * instancias, más alrededor de 1 s si Neon estaba suspendido. Con menos, quien tenía sesión acabaría en el login.
+ */
+const RESTORE_TIMEOUT_MS = 20_000;
 /**
  * Indicio, sin datos personales, de que este navegador tiene una sesión abierta (la cookie es httpOnly: la página no
  * puede verla). Sin él, el arranque solo espera {@link RESTORE_TIMEOUT_WITHOUT_HINT_MS} a la API: quien llega por
