@@ -138,14 +138,14 @@ describe('AuthStore', () => {
       }
     });
 
-    it('con él, el arranque espera hasta 8 s', async () => {
+    it('con él, el arranque espera hasta 20 s (un arranque en frío de la API)', async () => {
       localStorage.setItem('hb_session', '1');
       vi.useFakeTimers();
       try {
         let done = false;
         void store.restore().then(() => (done = true));
 
-        await vi.advanceTimersByTimeAsync(7000);
+        await vi.advanceTimersByTimeAsync(19_000);
         http.expectOne('/api/v1/auth/refresh');
         expect(done).toBe(false);
         await vi.advanceTimersByTimeAsync(1100);
