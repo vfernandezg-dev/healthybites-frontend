@@ -225,8 +225,8 @@ importers:
         specifier: ^5.3.0
         version: 5.3.0
       '@lucide/angular':
-        specifier: ^1.72.0
-        version: 1.72.0(@angular/common@22.2.6(@angular/core@22.2.6(@angular/compiler@22.2.6)(rxjs@7.8.2)(zone.js@0.16.3))(rxjs@7.8.2))(@angular/core@22.2.6(@angular/compiler@22.2.6)(rxjs@7.8.2)(zone.js@0.16.3))
+        specifier: ^1.75.0
+        version: 1.75.0(@angular/common@22.2.6(@angular/core@22.2.6(@angular/compiler@22.2.6)(rxjs@7.8.2)(zone.js@0.16.3))(rxjs@7.8.2))(@angular/core@22.2.6(@angular/compiler@22.2.6)(rxjs@7.8.2)(zone.js@0.16.3))
       '@primeuix/themes':
         specifier: ^3.1.1
         version: 3.1.1
@@ -1146,8 +1146,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@lucide/angular@1.72.0':
-    resolution: {integrity: sha512-xQSi725qJg996JMi9ErnfLKllHs0lnJnebLN3kOy/fisWhC+LeEATYV4AO0jhESDkMbRlzUjTJ8bYgbSe9sX8g==}
+  '@lucide/angular@1.75.0':
+    resolution: {integrity: sha512-xmbKFE8sXBrhM0q4DRdvpgWpUbev6uR6usphHHFuQT31lYd75Z+f2EnsTMrX6bt8FAH7qPdTK1Qa8tAWWDqIFg==}
     peerDependencies:
       '@angular/common': '>=17.0.0'
       '@angular/core': '>=17.0.0'
@@ -4607,7 +4607,7 @@ snapshots:
   '@lmdb/lmdb-win32-x64@3.5.6':
     optional: true
 
-  '@lucide/angular@1.72.0(@angular/common@22.2.6(@angular/core@22.2.6(@angular/compiler@22.2.6)(rxjs@7.8.2)(zone.js@0.16.3))(rxjs@7.8.2))(@angular/core@22.2.6(@angular/compiler@22.2.6)(rxjs@7.8.2)(zone.js@0.16.3))':
+  '@lucide/angular@1.75.0(@angular/common@22.2.6(@angular/core@22.2.6(@angular/compiler@22.2.6)(rxjs@7.8.2)(zone.js@0.16.3))(rxjs@7.8.2))(@angular/core@22.2.6(@angular/compiler@22.2.6)(rxjs@7.8.2)(zone.js@0.16.3))':
     dependencies:
       '@angular/common': 22.2.6(@angular/core@22.2.6(@angular/compiler@22.2.6)(rxjs@7.8.2)(zone.js@0.16.3))(rxjs@7.8.2)
       '@angular/core': 22.2.6(@angular/compiler@22.2.6)(rxjs@7.8.2)(zone.js@0.16.3)
