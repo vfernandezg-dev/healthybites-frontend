@@ -55,7 +55,7 @@
     "@ngx-env/builder": "^22.0.0",
     "@playwright/test": "^1.65.0",
     "@tailwindcss/postcss": "^4.3.5",
-    "@types/node": "^26.6.6",
+    "@types/node": "^26.6.10",
     "angular-eslint": "^22.6.0",
     "eslint": "^10.14.0",
     "eslint-config-prettier": "^10.1.8",
